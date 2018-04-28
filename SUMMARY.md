@@ -7,4 +7,5 @@
 * [Xcode](xcode.md)
 * [常见方法](chang-jian-fang-fa.md)
 * [思想](si-xiang.md)
+* [了解和使用](le-jie-he-shi-yong.md)
 

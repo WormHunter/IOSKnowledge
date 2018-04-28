@@ -5,4 +5,6 @@
 * [ui基础](ui.md)
 * [报错崩溃收集整理](bao-cuo-beng-kui-shou-ji-zheng-li.md)
 * [Xcode](xcode.md)
+* [常见方法](chang-jian-fang-fa.md)
+* [思想](si-xiang.md)
 

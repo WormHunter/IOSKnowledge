@@ -4,3 +4,12 @@
 - 因此，可以考虑将经常变的数据放在文件中进行存储，程序启动后从文件中读取最新的数据。如果要变动数据，直接修改数据文件即可，不用修改代码
 
 - 一般可以使用属性列表文件存储NSArray或者NSDictionary之类的数据，这种“属性列表文件”的扩展名是**plist**，因此也称为“plist文件”
+### 加载plist
+
+
+```
+///加载plist
+self.shops = [NSArray arryWithContentsOfFile:file];
+```
+
+

@@ -25,6 +25,55 @@ self.shops = [NSArray arryWithContentsOfFile:file];
     UINib *nib = [UINib nibWithNibName:@"xib文件名" bundle:nil];
     NSArray *views = [nib instantiateWithOwner:nil options:nil];
     ```
+### xib
+
+
+```
+/**
+ * 当控件通过代码创建时，就会调用这个方法
+ * 当控件通过代码创建时，想做一些初始化操作。应该在这个方法中执行
+ */
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self setup];
+        
+        // 添加子控件代码
+    }
+    return self;
+}
+
+/**
+ * 当控件是通过xib\storyboard创建时，会调用这个方法来初始化控件
+ */
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+    }
+    return self;
+}
+
+/**
+ * 当控件从xib\storyboard中创建完毕时，就会调用这个方法
+ * 当控件从xib\storyboard中创建完毕后的初始化操作。应该在这个方法中执行
+ */
+- (void)awakeFromNib
+{
+    [self setup];
+}
+
+/**
+ * 自定义的方法（不是系统方法）
+ * 初始化代码
+ */
+- (void)setup
+{
+    self.scrollView.backgroundColor = [UIColor redColor];
+}
+
+```
+
+
 
 
 

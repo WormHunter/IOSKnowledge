@@ -11,4 +11,5 @@
 * [常识](chang-shi.md)
 * [markdown](markdown.md)
 * [动画](dong-hua.md)
+* [笔记](bi-ji.md)
 

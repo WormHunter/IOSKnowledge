@@ -1,4 +1,6 @@
-- 提示过期不建议使用（划线）
+- xib中的预览功能 ==> xib->双环->Preview
+
+- 提示过期不建议使用（中划线）
     ```
     NS_DEPRECATED_IOS(_iosIntro, _iosDep, ...)
     ```

@@ -72,6 +72,16 @@ self.shops = [NSArray arryWithContentsOfFile:file];
 }
 
 ```
+- 基于Autolayout的动画
+```
+//在修改了约束之后，只要执行下面代码，就能做动画效果
+[UIView animateWithDuration:1.0 animations:^{
+    [添加了约束的view layoutIfNeeded];
+}];
+```
+
+
+
 
 
 

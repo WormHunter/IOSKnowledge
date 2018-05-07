@@ -5,9 +5,12 @@
 NSString *ID = @"hero";
 ```
 - 注册某个便是对应cell类型
-```c
-[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
-```
+    ```c
+    //一般在viewDidLoad 里面写，因为只需要注册一次
+    - (void)viewDidLoad{
+        [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    }
+    ```
 - 在数据方法中返回cell
     ```c
     - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

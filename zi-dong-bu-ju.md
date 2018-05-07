@@ -1,0 +1,4 @@
+原生
+NSLayoutConstraint
+需要设置
+xxxView.translatesAutoresizingMaskIntoConstraints = NO;

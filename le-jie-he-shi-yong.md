@@ -7,7 +7,7 @@
 ### 加载plist
 
 
-```
+```obj-c
 ///加载plist
 self.shops = [NSArray arryWithContentsOfFile:file];
 ```
@@ -15,7 +15,7 @@ self.shops = [NSArray arryWithContentsOfFile:file];
 ### Xib加载
 - 方法1
 
-    ```
+    ```obj-c
     NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"xib文件名" owner:nil options:nil]
     ```
 
@@ -28,7 +28,7 @@ self.shops = [NSArray arryWithContentsOfFile:file];
 ### xib
 
 
-```
+```obj-c
 /**
  * 当控件通过代码创建时，就会调用这个方法
  * 当控件通过代码创建时，想做一些初始化操作。应该在这个方法中执行
@@ -73,7 +73,7 @@ self.shops = [NSArray arryWithContentsOfFile:file];
 
 ```
 - 基于Autolayout的动画
-```
+```obj-c
 //在修改了约束之后，只要执行下面代码，就能做动画效果
 [UIView animateWithDuration:1.0 animations:^{
     [添加了约束的view layoutIfNeeded];

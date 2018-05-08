@@ -2,7 +2,7 @@
 
 - 方法一：
     在第一句和最后一句之间写代码
-    ```
+    ```obj-c
     [UIView beginAnimations:nil context: nil];
     [UIView setAnimationDuration:2.0]; //持续时间
     [UIView setAnimationDelegate:self]; // 代理
@@ -13,7 +13,7 @@
     ```
 - 方法二：
     block方式
-    ```
+    ```obj-c
     [UIView animateWith......];
     ```
     

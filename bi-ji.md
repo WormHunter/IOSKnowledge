@@ -1,7 +1,7 @@
 
 
 - 提示过期不建议使用（中划线）
-    ```
+    ```obj-c
     NS_DEPRECATED_IOS(_iosIntro, _iosDep, ...)
     ```
 

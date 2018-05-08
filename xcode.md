@@ -5,7 +5,7 @@
 
 * 注释
   * 文档注释
-    ```c
+    ```obj-c
     /**我是label控件*/
     @property (nonatomic,strong)UILabel *label;
     ```

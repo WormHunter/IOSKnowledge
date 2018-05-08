@@ -1,18 +1,18 @@
 ## tableView 性能优化 - cell的循环利用方式
 - 定义一个全局变量
-```c
+```obj-c
 // 定义重用标识
 NSString *ID = @"hero";
 ```
 - 注册某个便是对应cell类型
-    ```c
+    ```obj-c
     //一般在viewDidLoad 里面写，因为只需要注册一次
     - (void)viewDidLoad{
         [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
     }
     ```
 - 在数据方法中返回cell
-    ```c
+    ```obj-c
     - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
     {
         // 1.去缓存池中查找cell
@@ -36,7 +36,7 @@ NSString *ID = @"hero";
 
 ## 常见属性
     - cell的属性
-    ```
+    ```obj-c
     cell.textLabel.text = @"5345345";
     cell.imageView.image = [UIImage imageNamed:@"173890255948"];
     // 取消选中的样式

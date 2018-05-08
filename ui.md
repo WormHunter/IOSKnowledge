@@ -11,7 +11,7 @@
 
 * UIView的常见属性
 
-```c
+```obj-c
 @property(nonatomic) CGRect frame;
 //控制矩形框在父控件中的位置和尺寸（以父控件的左上角为坐标原点）
 

@@ -29,5 +29,39 @@ NSString *ID = @"hero";
     }
     ```
 
+## 代理方法
+- 取消选中，即上一次选中的被取消
 
+- cell.imageView.superview == cell.contentView,往cell里面加内容都要放到contentView
+
+## 常见属性
+    - cell的属性
+    ```
+    cell.textLabel.text = @"5345345";
+    cell.imageView.image = [UIImage imageNamed:@"173890255948"];
+    // 取消选中的样式
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    // 设置选中的背景色
+    UIView *selectedBackgroundView = [[UIView alloc] init];
+    selectedBackgroundView.backgroundColor = [UIColor redColor];
+    cell.selectedBackgroundView = selectedBackgroundView;
+    
+    // 设置默认的背景色 1
+    cell.backgroundColor = [UIColor blueColor];
+    
+    // 设置默认的背景色 2
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = [UIColor greenColor];
+    cell.backgroundView = backgroundView;
+    
+    // 设置指示器
+     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+     //可以自定义view，例如设置一个图片view
+//    cell.accessoryView =  [[UIImageView alloc] init];
+    ```
+
+
+
+ 
 

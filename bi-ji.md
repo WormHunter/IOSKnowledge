@@ -8,4 +8,7 @@
 - 消息循环\运行循环 runloop
 
 
+- kvc -- key value coding 键值编码
+
+
 

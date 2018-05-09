@@ -17,6 +17,11 @@ self.shops = [NSArray arrayWithContentsOfFile:file];
     UINib *nib = [UINib nibWithNibName:@"Test" bundle:nil];
     ```
     
+- 控制器的init方法才会自动加载xib,别的除外
+```obj-c
+[[xxx alloc]init]
+```
+
 
     
 

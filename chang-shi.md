@@ -19,7 +19,7 @@ self.shops = [NSArray arrayWithContentsOfFile:file];
     
 - 控制器的init方法才会自动加载xib,别的除外
 ```obj-c
-[[xxx alloc]init]
+[[xxx alloc]init];
 ```
 
 

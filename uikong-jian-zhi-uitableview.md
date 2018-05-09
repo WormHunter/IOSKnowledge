@@ -60,6 +60,25 @@ NSString *ID = @"hero";
      //可以自定义view，例如设置一个图片view
 //    cell.accessoryView =  [[UIImageView alloc] init];
     ```
+    
+- xib自定义cell
+  - 方法一
+  
+```obj-c
+//创建 xxxCell.xib
+//在 xxxCell.xib中拖一个Cell控件出来
+//给 这个cell 添加 id
+
+//在代理方法里
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *ID = @"xxx";
+    xxxCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if(cell == nil){
+        [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([xxxCell class]) owner:nil options:nil] lastObject];
+    }
+    return cell;
+}
+```
 
 
 

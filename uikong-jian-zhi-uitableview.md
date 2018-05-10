@@ -62,7 +62,7 @@ NSString *ID = @"hero";
     ```
     
 - xib自定义cell
-  - 方法一
+  - 
   
 ```obj-c
 //创建 xxxCell.xib
@@ -79,6 +79,43 @@ NSString *ID = @"hero";
     return cell;
 }
 ```
+- xib自定义cell
+    - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br>
+    - 2.创建一个xib文件（文件名建议跟cell的类名一样）,比如XMGDealCell.xib
+        - 拖拽一个UITableViewCell出来
+        - 修改cell的class为XMGDealCell
+        - 设置cell的重用标识
+        - 往cell中添加需要用到的子控件
+    - 3.在控制器中
+        - 利用registerNib...方法注册xib文件
+        - 利用重用标识找到cell(如果没有注册xib文件，就需要手动去加载xib文件)
+        -给cell传递模型数据<br>
+- 代码自定义cell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

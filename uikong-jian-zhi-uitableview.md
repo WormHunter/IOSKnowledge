@@ -61,24 +61,9 @@ NSString *ID = @"hero";
 //    cell.accessoryView =  [[UIImageView alloc] init];
     ```
     
-- xib自定义cell
-  - 
-  
-```obj-c
-//创建 xxxCell.xib
-//在 xxxCell.xib中拖一个Cell控件出来
-//给 这个cell 添加 id
+## 自定义cell
 
-//在代理方法里
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *ID = @"xxx";
-    xxxCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if(cell == nil){
-        [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([xxxCell class]) owner:nil options:nil] lastObject];
-    }
-    return cell;
-}
-```
+
 - 等高的cell
     - xib自定义cell
         - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br>

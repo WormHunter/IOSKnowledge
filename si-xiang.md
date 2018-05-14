@@ -1,5 +1,5 @@
 ## property用到布尔类型的属性时
-- 目的是为了方便阅读
+- 目的是为了方便阅读，增强可读性
 ```objc
 @property (assign, nonatomic) BOOL *vip;
 //建议改成

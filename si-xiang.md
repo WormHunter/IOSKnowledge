@@ -1,3 +1,10 @@
+## property用到布尔类型的属性时
+```objc
+@property (assign, nonatomic) BOOL *vip;
+//建议改成
+@property (assign, nonatomic,getter=isVip) BOOL *vip;
+```
+
 ## 四舍五入
 
 0.3 &gt;&gt; \(int\)\(0.3+0.5\) &gt;&gt; 0  
@@ -28,8 +35,6 @@
 ```obj-c
 int a = 10;
 ```
-
-
 
 ## 懒加载
 
